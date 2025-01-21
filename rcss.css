@@ -1,0 +1,103 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: whitesmoke;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    
+    text-align: center;
+    background-color: beige;
+    padding: 60px;
+    border-bottom: 2px solid #ccc;
+}
+
+header .top h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+header p {
+    
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+header a {
+    color: blue;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+/* Sidebar Styling */
+.aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: blueviolet;
+    color: white;
+    width: 200px;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.aside h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+.aside p {
+    font-size: 1rem;
+}
+
+/* Main Content Styling */
+.main-content {
+    margin-left: 220px;
+    padding: 20px;
+    font-size: 1rem;
+}
+
+.main-content h2 {
+    color: #555;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.main-content ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.main-content li {
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .aside {
+        width: 150px;
+    }
+    .main-content {
+        margin-left: 170px;
+    }
+}
+
+@media (max-width: 480px) {
+    .aside {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    .main-content {
+        margin-left: 0;
+        padding: 10px;
+    }
+}
